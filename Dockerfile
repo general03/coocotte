@@ -1,24 +1,13 @@
 FROM openjdk:8-jre-alpine
 
-# install yeoman
-#RUN npm install -g yo
-# install JHipster
-#RUN npm install -g generator-jhipster@1.10.2
-# Install Bower & Grunt RUN
-#RUN npm install -g bower grunt-cli
-# Installer le gestionnaire de dépendances JS
-#RUN npm install -g yarn
-
 # On copie nos fichiers locaux dans le container
 # Il faudrait mettre le même que -v de docker run lancé la première fois mais si on peut mettre /gordon il créer un autre volume de destination
-COPY . /gordon
+COPY . /coocotte
 
 ENV JHIPSTER_SLEEP 0
 
-RUN ./mvnw -Pprod package -DskipTests=true
-
 # Renomme le package war
-ADD *.war /app.war
+# ADD *.war /app.war
 # On modifie la date de modification pour que docker le prenne en compte
 RUN sh -c 'touch /app.war'
 # Spring Boot travaille dans ce dossier au besoin
