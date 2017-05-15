@@ -2,6 +2,7 @@
 # Project Specific
 ######################
 /target/www/**
+!target/coocotte-0.0.1-SNAPSHOT.war
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
 
@@ -69,7 +70,6 @@ local.properties
 ######################
 /log/
 /target/
-!target/coocotte-0.0.1-SNAPSHOT.war
 
 ######################
 # Gradle
