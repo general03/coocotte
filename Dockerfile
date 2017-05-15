@@ -6,7 +6,7 @@ COPY . /coocotte
 
 ENV JHIPSTER_SLEEP 0
 
-#RUN cd coocotte && ls -l
+RUN cd coocotte && ls -l
 # Renomme le package war
 ADD coocotte/target/*.war /app.war
 
