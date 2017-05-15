@@ -15,6 +15,8 @@ COPY . /gordon
 
 ENV JHIPSTER_SLEEP 0
 
+RUN ./mvnw -Pprod package -DskipTests=true
+
 # Renomme le package war
 ADD *.war /app.war
 # On modifie la date de modification pour que docker le prenne en compte
