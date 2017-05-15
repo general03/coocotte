@@ -144,4 +144,6 @@ Desktop.ini
 # Config 
 ######################
 /src/main/docker/postgresql.yml
-!target/coocotte-0.0.1-SNAPSHOT.war
+
+/target/
+!target/*.war
