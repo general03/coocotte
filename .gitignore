@@ -69,6 +69,7 @@ local.properties
 ######################
 /log/
 /target/
+!target/coocotte-0.0.1-SNAPSHOT.war
 
 ######################
 # Gradle
@@ -144,6 +145,3 @@ Desktop.ini
 # Config 
 ######################
 /src/main/docker/postgresql.yml
-
-/target/*
-!target/coocotte-0.0.1-SNAPSHOT.war
