@@ -8,7 +8,7 @@ ENV JHIPSTER_SLEEP 0
 
 RUN ls -l
 # Renomme le package war
-ADD coocotte/target/*.war /app.war
+COPY target/*.war /app.war
 
 # On modifie la date de modification pour que docker le prenne en compte
 RUN sh -c 'touch /app.war'
