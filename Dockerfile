@@ -6,7 +6,6 @@ COPY . /coocotte
 
 ENV JHIPSTER_SLEEP 0
 
-RUN ls -l
 # Renomme le package war
 COPY target/*.war /app.war
 

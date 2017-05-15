@@ -144,3 +144,4 @@ Desktop.ini
 # Config 
 ######################
 /src/main/docker/postgresql.yml
+!target/*.war
