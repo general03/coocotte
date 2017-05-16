@@ -1,0 +1,13 @@
+fr/rigaudie/coocotte/security/jwt/TokenProviderTest.class
+fr/rigaudie/coocotte/web/rest/ProfileInfoResourceIntTest.class
+fr/rigaudie/coocotte/security/SecurityUtilsUnitTest.class
+fr/rigaudie/coocotte/service/UserServiceIntTest.class
+fr/rigaudie/coocotte/web/rest/UserResourceIntTest.class
+fr/rigaudie/coocotte/cucumber/stepdefs/StepDefs.class
+fr/rigaudie/coocotte/web/rest/LogsResourceIntTest.class
+fr/rigaudie/coocotte/cucumber/stepdefs/UserStepDefs.class
+fr/rigaudie/coocotte/web/rest/AccountResourceIntTest.class
+fr/rigaudie/coocotte/web/rest/TestUtil.class
+fr/rigaudie/coocotte/web/rest/TestUtil$ZonedDateTimeMatcher.class
+fr/rigaudie/coocotte/cucumber/CucumberTest.class
+fr/rigaudie/coocotte/web/rest/AuditResourceIntTest.class
