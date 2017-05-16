@@ -1,6 +1,8 @@
 ######################
 # Project Specific
 ######################
+!target/*.war
+
 /target/www/**
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
@@ -144,5 +146,4 @@ Desktop.ini
 # Config 
 ######################
 /src/main/docker/postgresql.yml
-target/*
-!target/coocotte-0.0.1-SNAPSHOT.war
+/src/main/resources/config/application*.yml
