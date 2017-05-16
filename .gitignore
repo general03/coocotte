@@ -146,4 +146,4 @@ Desktop.ini
 /src/main/docker/postgresql.yml
 /src/main/resources/config/application*.yml
 
-!/target/*.war
+!target/teste.war
