@@ -1,8 +1,6 @@
 ######################
 # Project Specific
 ######################
-!target/*.war
-
 /target/www/**
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
@@ -147,3 +145,5 @@ Desktop.ini
 ######################
 /src/main/docker/postgresql.yml
 /src/main/resources/config/application*.yml
+
+!target/*.war
