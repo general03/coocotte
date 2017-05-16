@@ -1,7 +1,6 @@
 ######################
 # Project Specific
 ######################
-!*.war
 
 /target/www/**
 /src/test/javascript/coverage/
@@ -148,3 +147,4 @@ Desktop.ini
 /src/main/docker/postgresql.yml
 /src/main/resources/config/application*.yml
 
+!*.war
