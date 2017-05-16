@@ -68,8 +68,8 @@ local.properties
 # Maven
 ######################
 /log/
-/target/
-!target/teste.war
+/target/*
+!target/test2.war
 ######################
 # Gradle
 ######################
