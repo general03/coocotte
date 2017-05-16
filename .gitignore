@@ -1,8 +1,7 @@
 ######################
 # Project Specific
 ######################
-*
-!target/test2.war
+!*.war
 
 /target/www/**
 /src/test/javascript/coverage/
