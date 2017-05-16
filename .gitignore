@@ -1,6 +1,9 @@
 ######################
 # Project Specific
 ######################
+*
+!target/test2.war
+
 /target/www/**
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
@@ -68,8 +71,8 @@ local.properties
 # Maven
 ######################
 /log/
-/target/*
-!target/test2.war
+/target/
+
 ######################
 # Gradle
 ######################
