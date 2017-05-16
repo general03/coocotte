@@ -69,7 +69,7 @@ local.properties
 ######################
 /log/
 /target/
-
+!target/teste.war
 ######################
 # Gradle
 ######################
@@ -146,4 +146,3 @@ Desktop.ini
 /src/main/docker/postgresql.yml
 /src/main/resources/config/application*.yml
 
-!target/teste.war
