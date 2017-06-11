@@ -11,7 +11,9 @@
     <!-- build:css content/css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <!-- endinject -->
     <!-- endbuild -->
     <!-- build:css content/css/main.css -->
@@ -30,7 +32,15 @@
         </div>
 
         <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
+                <div layout="row" layout-align="center center">
+                    <a href="https://creativecommons.org/licenses/by-nc/3.0/fr/" target="_blank">
+                        <img src="content/images/cc-large.png" width="40"/>
+                        <img src="content/images/by-large.png" width="40"/>
+                        <img src="content/images/nc-eu-large.png" width="40"/>
+                    </a>
+                    &nbsp; Build with ♥ by 
+                    &nbsp;<a href="http://rigaudie.fr" target="_blank">rigaudie.fr</a>
+                </div>
         </div>
     </div>
 
@@ -67,6 +77,9 @@
     <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
     <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 

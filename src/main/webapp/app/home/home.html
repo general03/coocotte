@@ -1,41 +1,48 @@
 <div ng-cloak>
     <div class="row">
-        <div class="col-md-4">
-            <span class="hipster img-responsive img-rounded"></span>
-        </div>
-        <div class="col-md-8">
-            <h1 data-translate="home.title">Welcome, Java Hipster!</h1>
-            <p class="lead" data-translate="home.subtitle">This is your home  page</p>
+        <div class="col-md-12">
+            <h1 data-translate="home.title">Welcome, Coocotte</h1>
+            <p class="lead" data-translate="home.subtitle">The connecting chicken</p>
 
             <div ng-switch="vm.isAuthenticated()">
                 <div class="alert alert-success" ng-switch-when="true" data-translate="home.logged.message" translate-values="{username: '{{vm.account.login}}'}">
                     You are logged in as user "{{vm.account.login}}".
                 </div>
-
-                <div class="alert alert-warning" ng-switch-when="false" data-translate="global.messages.info.authenticated" translate-compile>
-                    If you want to <a class="alert-link" href="" ng-click="vm.login()">sign in</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").
-                </div>
-
-                <div class="alert alert-warning" ng-switch-when="false" data-translate="global.messages.info.register" translate-compile>
-                    You don't have an account yet? <a class="alert-link" ui-sref="register">Register a new account</a>
-                </div>
             </div>
 
-            <p data-translate="home.question">
-                If you have any question on JHipster:
-            </p>
+            <div layout="row">
+              <div flex>
+                <md-card>
+                  <img ng-src="content/images/launch_project.jpg" class="md-card-image" alt="lancement du projet">
+                  <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline" data-translate="home.startproject">The project started</span>
+                    </md-card-title-text>
+                  </md-card-title>
+                  <md-card-actions layout="row" layout-align="end center">
+                    <md-button class="md-icon-button" aria-label="Favorite">
+                      <md-icon>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                      </md-icon>
+                    </md-button>
+                  </md-card-actions>
+                  <md-card-content>
+                    <p>
+                      Après avoir fait l'acquisition d'un cheptel de poules je me suis mis en tête de connecter mon poulailler au web ! La domotique pour poule est né ... <br>
+                      J'ai pleins d'idées comme automatiser l'ouverture et fermeture de la porte du poulailler, être prévenu de gelés pour changer l'eau, monitorer la température à l'intérieur du poulailler, être alerté par SMS dès qu'une poule pond un oeuf ... <br>
+                      On va commencer par simple et par quelque chose d'utile : <b>l'ouverture de la porte</b>.<br>
+                      Un challenge car je vais redécouvrir mon ancienne passion qu'est l'électronique. En effet il va falloir commander électroniquement cette porte avec mon Rasberry PI.<br>
+                      Le prochain article parlera de comment commander son moteur.
+                    </p>
+                  </md-card-content>
+                </md-card>
+              </div>
 
-            <ul>
-                <li><a href="http://jhipster.github.io/" target="_blank" data-translate="home.link.homepage">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" data-translate="home.link.stackoverflow">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" data-translate="home.link.bugtracker">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" data-translate="home.link.chat">JHipster public chat room</a></li>
-                <li><a href="https://twitter.com/java_hipster" target="_blank"  data-translate="home.link.follow">follow @java_hipster on Twitter</a></li>
-            </ul>
+              <div flex>
+                
+              </div>
+            </div>
 
-            <p>
-             <span data-translate="home.like">If you like JHipster, don't forget to give us a star on </span>&nbsp;<a href="https://github.com/jhipster/generator-jhipster" target="_blank" data-translate="home.github">Github</a>!
-            </p>
         </div>
     </div>
 </div>

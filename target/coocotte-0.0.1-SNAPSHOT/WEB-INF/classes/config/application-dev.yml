@@ -26,7 +26,7 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/coocotte
+        url: jdbc:postgresql://postgresql:5432/coocotte
         username: coocotte
         password:
     jpa:
@@ -50,7 +50,7 @@ spring:
         cache: false
 
 liquibase:
-    contexts: dev
+    contexts: devtest
 
 # ===================================================================
 # To enable SSL, generate a certificate using:

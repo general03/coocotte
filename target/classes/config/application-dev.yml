@@ -50,7 +50,7 @@ spring:
         cache: false
 
 liquibase:
-    contexts: dev
+    contexts: devtest
 
 # ===================================================================
 # To enable SSL, generate a certificate using:
