@@ -1,12 +1,13 @@
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/UserResourceIntTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/TestUtil.java
+/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/cucumber/CucumberTest.java
+/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/service/UserServiceIntTest.java
+/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/AccountResourceIntTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/cucumber/stepdefs/UserStepDefs.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/ProfileInfoResourceIntTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/LogsResourceIntTest.java
-/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/cucumber/CucumberTest.java
-/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/service/UserServiceIntTest.java
+/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/ArticleResourceIntTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/security/jwt/TokenProviderTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/AuditResourceIntTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/security/SecurityUtilsUnitTest.java
 /home/jhipster/app/src/test/java/fr/rigaudie/coocotte/cucumber/stepdefs/StepDefs.java
-/home/jhipster/app/src/test/java/fr/rigaudie/coocotte/web/rest/AccountResourceIntTest.java

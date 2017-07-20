@@ -10,36 +10,34 @@
                 </div>
             </div>
 
-            <div layout="row">
-              <div flex>
-                <md-card>
-                  <img ng-src="content/images/launch_project.jpg" class="md-card-image" alt="lancement du projet">
-                  <md-card-title>
-                    <md-card-title-text>
-                      <span class="md-headline" data-translate="home.startproject">The project started</span>
-                    </md-card-title-text>
-                  </md-card-title>
-                  <md-card-actions layout="row" layout-align="end center">
-                    <md-button class="md-icon-button" aria-label="Favorite">
-                      <md-icon>
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                      </md-icon>
-                    </md-button>
-                  </md-card-actions>
-                  <md-card-content>
-                    <p>
-                      Après avoir fait l'acquisition d'un cheptel de poules je me suis mis en tête de connecter mon poulailler au web ! La domotique pour poule est né ... <br>
-                      J'ai pleins d'idées comme automatiser l'ouverture et fermeture de la porte du poulailler, être prévenu de gelés pour changer l'eau, monitorer la température à l'intérieur du poulailler, être alerté par SMS dès qu'une poule pond un oeuf ... <br>
-                      On va commencer par simple et par quelque chose d'utile : <b>l'ouverture de la porte</b>.<br>
-                      Un challenge car je vais redécouvrir mon ancienne passion qu'est l'électronique. En effet il va falloir commander électroniquement cette porte avec mon Rasberry PI.<br>
-                      Le prochain article parlera de comment commander son moteur.
-                    </p>
-                  </md-card-content>
-                </md-card>
-              </div>
+            <div ng-repeat="art in vm.articles">
+              <div layout="row">
+                <div flex>
+                  <md-card>
+                    <img ng-src="content/images/launch_project.jpg" class="md-card-image" alt="lancement du projet">
+                    <md-card-title>
+                      <md-card-title-text>
+                        <span class="md-headline" data-translate="home.startproject">{{ art.title }}</span>
+                      </md-card-title-text>
+                    </md-card-title>
+                    <md-card-actions layout="row" layout-align="end center">
+                      <md-button class="md-icon-button" aria-label="Favorite">
+                        <md-icon>
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                        </md-icon>
+                      </md-button>
+                    </md-card-actions>
+                    <md-card-content>
+                      <p>
+                        {{ art.summary }}
+                      </p>
+                    </md-card-content>
+                  </md-card>
+                </div>
 
-              <div flex>
-                
+                <div flex>
+                  
+                </div>
               </div>
             </div>
 

@@ -3,6 +3,7 @@ Coocotte,fr.rigaudie.coocotte.domain,User,76,121,2,4,6,45,6,27,4,26
 Coocotte,fr.rigaudie.coocotte.domain,AbstractAuditingEntity,16,21,0,0,8,9,4,5,4,5
 Coocotte,fr.rigaudie.coocotte.domain,PersistentAuditEvent,8,35,0,0,4,13,2,9,2,9
 Coocotte,fr.rigaudie.coocotte.domain,Authority,44,23,12,2,7,7,8,5,1,5
+Coocotte,fr.rigaudie.coocotte.domain,Article,142,0,10,0,45,0,26,0,21,0
 Coocotte,fr.rigaudie.coocotte.repository,CustomAuditEventRepository,101,9,10,0,23,4,9,1,4,1
 Coocotte,fr.rigaudie.coocotte,CoocotteApp,81,24,8,2,15,8,6,3,1,3
 Coocotte,fr.rigaudie.coocotte,ApplicationWebXml,15,0,0,0,3,0,2,0,2,0
@@ -15,6 +16,7 @@ Coocotte,fr.rigaudie.coocotte.web.rest,UserResource,0,219,0,14,0,44,0,13,0,6
 Coocotte,fr.rigaudie.coocotte.web.rest,LogsResource,0,27,0,0,0,9,0,3,0,3
 Coocotte,fr.rigaudie.coocotte.web.rest,AccountResource,171,124,14,0,30,24,18,9,11,9
 Coocotte,fr.rigaudie.coocotte.web.rest,UserJWTController,64,13,2,0,12,5,2,1,1,1
+Coocotte,fr.rigaudie.coocotte.web.rest,ArticleResource,140,0,4,0,28,0,8,0,6,0
 Coocotte,fr.rigaudie.coocotte.web.rest,ProfileInfoResource.ProfileInfoVM,0,18,0,0,0,6,0,3,0,3
 Coocotte,fr.rigaudie.coocotte.web.rest,JWTToken,13,0,0,0,6,0,3,0,3,0
 Coocotte,fr.rigaudie.coocotte.web.rest,ProfileInfoResource,0,54,0,4,0,15,0,5,0,3
@@ -30,7 +32,7 @@ Coocotte,fr.rigaudie.coocotte.config,LoggingConfiguration.LogbackLoggerContextLi
 Coocotte,fr.rigaudie.coocotte.config,MetricsConfiguration,24,119,3,3,7,26,3,5,0,5
 Coocotte,fr.rigaudie.coocotte.config,AsyncConfiguration,0,48,0,0,0,12,0,3,0,3
 Coocotte,fr.rigaudie.coocotte.config,SecurityConfiguration,7,246,0,0,2,54,0,8,0,8
-Coocotte,fr.rigaudie.coocotte.config,CacheConfiguration,29,27,0,0,4,10,1,2,1,2
+Coocotte,fr.rigaudie.coocotte.config,CacheConfiguration,63,0,0,0,15,0,3,0,3,0
 Coocotte,fr.rigaudie.coocotte.config,DateTimeFormatConfiguration,0,14,0,0,0,5,0,2,0,2
 Coocotte,fr.rigaudie.coocotte.config,Constants,3,0,0,0,2,0,1,0,1,0
 Coocotte,fr.rigaudie.coocotte.config,DatabaseConfiguration,4,59,1,1,1,15,1,3,0,3

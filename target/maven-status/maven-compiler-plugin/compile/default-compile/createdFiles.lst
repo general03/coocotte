@@ -21,6 +21,7 @@ fr/rigaudie/coocotte/config/audit/AuditEventConverter.class
 fr/rigaudie/coocotte/web/rest/vm/ManagedUserVM.class
 fr/rigaudie/coocotte/config/DatabaseConfiguration.class
 fr/rigaudie/coocotte/service/mapper/UserMapperImpl.class
+fr/rigaudie/coocotte/domain/Article.class
 fr/rigaudie/coocotte/config/LoggingConfiguration.class
 fr/rigaudie/coocotte/service/UserService.class
 fr/rigaudie/coocotte/config/WebConfigurer.class
@@ -28,6 +29,7 @@ fr/rigaudie/coocotte/security/jwt/JWTFilter.class
 fr/rigaudie/coocotte/web/rest/errors/ExceptionTranslator.class
 fr/rigaudie/coocotte/repository/CustomAuditEventRepository.class
 fr/rigaudie/coocotte/config/Constants.class
+fr/rigaudie/coocotte/repository/ArticleRepository.class
 fr/rigaudie/coocotte/domain/User.class
 fr/rigaudie/coocotte/web/rest/util/PaginationUtil.class
 fr/rigaudie/coocotte/config/LocaleConfiguration.class
@@ -48,6 +50,7 @@ fr/rigaudie/coocotte/security/jwt/JWTConfigurer.class
 fr/rigaudie/coocotte/config/DateTimeFormatConfiguration.class
 fr/rigaudie/coocotte/security/jwt/TokenProvider.class
 fr/rigaudie/coocotte/config/CacheConfiguration.class
+fr/rigaudie/coocotte/web/rest/ArticleResource.class
 fr/rigaudie/coocotte/service/AuditEventService.class
 fr/rigaudie/coocotte/config/ThymeleafConfiguration.class
 fr/rigaudie/coocotte/service/MailService.class

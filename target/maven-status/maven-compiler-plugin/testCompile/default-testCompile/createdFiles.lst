@@ -2,6 +2,7 @@ fr/rigaudie/coocotte/security/jwt/TokenProviderTest.class
 fr/rigaudie/coocotte/web/rest/ProfileInfoResourceIntTest.class
 fr/rigaudie/coocotte/security/SecurityUtilsUnitTest.class
 fr/rigaudie/coocotte/service/UserServiceIntTest.class
+fr/rigaudie/coocotte/web/rest/ArticleResourceIntTest.class
 fr/rigaudie/coocotte/web/rest/UserResourceIntTest.class
 fr/rigaudie/coocotte/cucumber/stepdefs/StepDefs.class
 fr/rigaudie/coocotte/web/rest/LogsResourceIntTest.class

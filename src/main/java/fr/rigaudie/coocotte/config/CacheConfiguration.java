@@ -40,6 +40,7 @@ public class CacheConfiguration {
             cm.createCache(fr.rigaudie.coocotte.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(fr.rigaudie.coocotte.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(fr.rigaudie.coocotte.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(fr.rigaudie.coocotte.domain.Article.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

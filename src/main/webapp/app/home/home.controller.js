@@ -5,9 +5,9 @@
         .module('coocotteApp')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope', 'Principal', 'LoginService', '$state'];
+    HomeController.$inject = ['$scope', 'Principal', 'LoginService', '$state', '$http'];
 
-    function HomeController ($scope, Principal, LoginService, $state) {
+    function HomeController ($scope, Principal, LoginService, $state, $http) {
         var vm = this;
 
         vm.account = null;
@@ -29,5 +29,16 @@
         function register () {
             $state.go('register');
         }
+
+        vm.articles = null;
+        $http({
+          method: 'GET',
+          url: 'api/articles'
+        }).then(function successCallback(response) {
+            vm.articles = response.data;
+        }, function errorCallback(response) {
+            console.error("Impossible d'obtenir les articles");
+        });
+
     }
 })();
