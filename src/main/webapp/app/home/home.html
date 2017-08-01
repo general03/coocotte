@@ -1,6 +1,6 @@
 <div ng-cloak>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" ng-init="clicked = 'false'" >
             <h1 data-translate="home.title">Welcome, Coocotte</h1>
             <p class="lead" data-translate="home.subtitle">The connecting chicken</p>
 
@@ -10,37 +10,42 @@
                 </div>
             </div>
 
-            <div ng-repeat="art in vm.articles">
-              <div layout="row">
-                <div flex>
-                  <md-card>
-                    <img ng-src="content/images/launch_project.jpg" class="md-card-image" alt="lancement du projet">
-                    <md-card-title>
-                      <md-card-title-text>
-                        <span class="md-headline" data-translate="home.startproject">{{ art.title }}</span>
-                      </md-card-title-text>
-                    </md-card-title>
-                    <md-card-actions layout="row" layout-align="end center">
-                      <md-button class="md-icon-button" aria-label="Favorite">
-                        <md-icon>
-                          <i class="fa fa-heart" aria-hidden="true"></i>
-                        </md-icon>
-                      </md-button>
-                    </md-card-actions>
-                    <md-card-content>
-                      <p>
-                        {{ art.summary }}
-                      </p>
-                    </md-card-content>
-                  </md-card>
+            <div>
+              <div ng-repeat="art in vm.articles">
+                <div ng-show="clicked == 'true'">
+                  <h1>{{ art.title }}</h1>
+                  <p>{{ art.content }}</p>
                 </div>
+                <div layout="row" ng-hide="clicked == 'true'">
+                  <div flex ng-click="clicked = 'true'" class="cursor-pointer">
+                    <md-card>
+                      <img ng-src="content/images/launch_project.jpg" class="md-card-image" alt="lancement du projet">
+                      <md-card-title>
+                        <md-card-title-text>
+                          <span class="md-headline" data-translate="home.startproject">{{ art.title }}</span>
+                        </md-card-title-text>
+                      </md-card-title>
+                      <md-card-actions layout="row" layout-align="end center">
+                        <md-button class="md-icon-button" aria-label="Favorite">
+                          <md-icon>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </md-icon>
+                        </md-button>
+                      </md-card-actions>
+                      <md-card-content>
+                        <p>
+                          {{ art.summary }}
+                        </p>
+                      </md-card-content>
+                    </md-card>
+                  </div>
 
-                <div flex>
-                  
+                  <div flex>
+                    
+                  </div>
                 </div>
               </div>
-            </div>
-
+            </div>            
         </div>
     </div>
 </div>
