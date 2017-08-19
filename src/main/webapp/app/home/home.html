@@ -11,12 +11,13 @@
             </div>
 
             <div>
-              <div ng-repeat="art in vm.articles">
-                <div ng-show="clicked == 'true'">
+              <div ng-repeat="art in vm.articles" class="al">
+                <button type="button" class="btn btn-primary" ng-click="clicked = 'false'" ng-show="clicked == 'true'">Retour aux articles</button>
+                <div ng-show="clicked == 'true'" >
                   <h1>{{ art.title }}</h1>
                   <p>{{ art.content }}</p>
                 </div>
-                <div layout="row" ng-hide="clicked == 'true'">
+                <div layout="row" ng-hide="clicked == 'true'" >
                   <div flex ng-click="clicked = 'true'" class="cursor-pointer">
                     <md-card>
                       <img ng-src="content/images/launch_project.jpg" class="md-card-image" alt="lancement du projet">

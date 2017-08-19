@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 
     value = "org.mapstruct.ap.MappingProcessor",
 
-    date = "2017-08-01T19:46:27+0000",
+    date = "2017-08-19T22:20:50+0000",
 
     comments = "version: 1.1.0.Final, compiler: javac, environment: Java 1.8.0_121 (Oracle Corporation)"
 
