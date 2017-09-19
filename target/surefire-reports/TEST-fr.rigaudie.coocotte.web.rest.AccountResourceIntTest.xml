@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="6.298" tests="12" errors="0" skipped="0" failures="0">
+<testsuite name="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="7.598" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -30,7 +30,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.9.13-moby"/>
+    <property name="os.version" value="4.9.41-moby"/>
     <property name="user.home" value="/home/jhipster"/>
     <property name="user.timezone" value="Etc/UTC"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -41,7 +41,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="org.apache.maven.wrapper.MavenWrapperMain clean package"/>
+    <property name="sun.java.command" value="org.apache.maven.wrapper.MavenWrapperMain -Pprod package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -58,16 +58,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testSaveInvalidLogin" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="1.313"/>
-  <testcase name="testRegisterInvalidEmail" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.425"/>
-  <testcase name="testRegisterInvalidLogin" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.459"/>
-  <testcase name="testRegisterInvalidPassword" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.406"/>
-  <testcase name="testRegisterAdminIsIgnored" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.632"/>
-  <testcase name="testGetUnknownAccount" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.291"/>
-  <testcase name="testRegisterDuplicateEmail" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.747"/>
-  <testcase name="testRegisterDuplicateLogin" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.749"/>
-  <testcase name="testAuthenticatedUser" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.265"/>
-  <testcase name="testRegisterValid" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.502"/>
-  <testcase name="testNonAuthenticatedUser" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.166"/>
-  <testcase name="testGetExistingAccount" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.343"/>
+  <testcase name="testSaveInvalidLogin" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="1.448"/>
+  <testcase name="testRegisterInvalidEmail" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.635"/>
+  <testcase name="testRegisterInvalidLogin" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.551"/>
+  <testcase name="testRegisterInvalidPassword" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.556"/>
+  <testcase name="testRegisterAdminIsIgnored" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.847"/>
+  <testcase name="testGetUnknownAccount" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.312"/>
+  <testcase name="testRegisterDuplicateEmail" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.69"/>
+  <testcase name="testRegisterDuplicateLogin" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.84"/>
+  <testcase name="testAuthenticatedUser" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.263"/>
+  <testcase name="testRegisterValid" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.75"/>
+  <testcase name="testNonAuthenticatedUser" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.272"/>
+  <testcase name="testGetExistingAccount" classname="fr.rigaudie.coocotte.web.rest.AccountResourceIntTest" time="0.434"/>
 </testsuite>

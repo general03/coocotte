@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.rigaudie.coocotte.web.rest.AccountResourceIntTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.81 sec - in fr.rigaudie.coocotte.web.rest.AccountResourceIntTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.292 sec - in fr.rigaudie.coocotte.web.rest.AccountResourceIntTest

@@ -104,24 +104,25 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 <span class="fc" id="L104">            .antMatchers(&quot;/api/account/reset_password/init&quot;).permitAll()</span>
 <span class="fc" id="L105">            .antMatchers(&quot;/api/account/reset_password/finish&quot;).permitAll()</span>
 <span class="fc" id="L106">            .antMatchers(&quot;/api/profile-info&quot;).permitAll()</span>
-<span class="fc" id="L107">            .antMatchers(&quot;/api/**&quot;).authenticated()</span>
-<span class="fc" id="L108">            .antMatchers(&quot;/management/health&quot;).permitAll()</span>
-<span class="fc" id="L109">            .antMatchers(&quot;/management/**&quot;).hasAuthority(AuthoritiesConstants.ADMIN)</span>
-<span class="fc" id="L110">            .antMatchers(&quot;/v2/api-docs/**&quot;).permitAll()</span>
-<span class="fc" id="L111">            .antMatchers(&quot;/swagger-resources/configuration/ui&quot;).permitAll()</span>
-<span class="fc" id="L112">            .antMatchers(&quot;/swagger-ui/index.html&quot;).hasAuthority(AuthoritiesConstants.ADMIN)</span>
-<span class="fc" id="L113">        .and()</span>
-<span class="fc" id="L114">            .apply(securityConfigurerAdapter());</span>
+<span class="fc" id="L107">            .antMatchers(HttpMethod.GET, &quot;/api/articles&quot;).permitAll()</span>
+<span class="fc" id="L108">            .antMatchers(&quot;/api/**&quot;).authenticated()</span>
+<span class="fc" id="L109">            .antMatchers(&quot;/management/health&quot;).permitAll()</span>
+<span class="fc" id="L110">            .antMatchers(&quot;/management/**&quot;).hasAuthority(AuthoritiesConstants.ADMIN)</span>
+<span class="fc" id="L111">            .antMatchers(&quot;/v2/api-docs/**&quot;).permitAll()</span>
+<span class="fc" id="L112">            .antMatchers(&quot;/swagger-resources/configuration/ui&quot;).permitAll()</span>
+<span class="fc" id="L113">            .antMatchers(&quot;/swagger-ui/index.html&quot;).hasAuthority(AuthoritiesConstants.ADMIN)</span>
+<span class="fc" id="L114">        .and()</span>
+<span class="fc" id="L115">            .apply(securityConfigurerAdapter());</span>
 
-<span class="fc" id="L116">    }</span>
+<span class="fc" id="L117">    }</span>
 
     private JWTConfigurer securityConfigurerAdapter() {
-<span class="fc" id="L119">        return new JWTConfigurer(tokenProvider);</span>
+<span class="fc" id="L120">        return new JWTConfigurer(tokenProvider);</span>
     }
 
     @Bean
     public SecurityEvaluationContextExtension securityEvaluationContextExtension() {
-<span class="fc" id="L124">        return new SecurityEvaluationContextExtension();</span>
+<span class="fc" id="L125">        return new SecurityEvaluationContextExtension();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

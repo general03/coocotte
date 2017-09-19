@@ -17,13 +17,13 @@ public class ErrorVM implements Serializable {
     private List&lt;FieldErrorVM&gt; fieldErrors;
 
     public ErrorVM(String message) {
-<span class="nc" id="L20">        this(message, null);</span>
-<span class="nc" id="L21">    }</span>
+<span class="fc" id="L20">        this(message, null);</span>
+<span class="fc" id="L21">    }</span>
 
-<span class="nc" id="L23">    public ErrorVM(String message, String description) {</span>
-<span class="nc" id="L24">        this.message = message;</span>
-<span class="nc" id="L25">        this.description = description;</span>
-<span class="nc" id="L26">    }</span>
+<span class="fc" id="L23">    public ErrorVM(String message, String description) {</span>
+<span class="fc" id="L24">        this.message = message;</span>
+<span class="fc" id="L25">        this.description = description;</span>
+<span class="fc" id="L26">    }</span>
 
 <span class="nc" id="L28">    public ErrorVM(String message, String description, List&lt;FieldErrorVM&gt; fieldErrors) {</span>
 <span class="nc" id="L29">        this.message = message;</span>
@@ -32,22 +32,22 @@ public class ErrorVM implements Serializable {
 <span class="nc" id="L32">    }</span>
 
     public void add(String objectName, String field, String message) {
-<span class="nc bnc" id="L35" title="All 2 branches missed.">        if (fieldErrors == null) {</span>
-<span class="nc" id="L36">            fieldErrors = new ArrayList&lt;&gt;();</span>
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">        if (fieldErrors == null) {</span>
+<span class="fc" id="L36">            fieldErrors = new ArrayList&lt;&gt;();</span>
         }
-<span class="nc" id="L38">        fieldErrors.add(new FieldErrorVM(objectName, field, message));</span>
-<span class="nc" id="L39">    }</span>
+<span class="fc" id="L38">        fieldErrors.add(new FieldErrorVM(objectName, field, message));</span>
+<span class="fc" id="L39">    }</span>
 
     public String getMessage() {
-<span class="nc" id="L42">        return message;</span>
+<span class="fc" id="L42">        return message;</span>
     }
 
     public String getDescription() {
-<span class="nc" id="L46">        return description;</span>
+<span class="fc" id="L46">        return description;</span>
     }
 
     public List&lt;FieldErrorVM&gt; getFieldErrors() {
-<span class="nc" id="L50">        return fieldErrors;</span>
+<span class="fc" id="L50">        return fieldErrors;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

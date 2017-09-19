@@ -31,13 +31,13 @@ import org.springframework.web.bind.annotation.*;
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public ErrorVM processValidationError(MethodArgumentNotValidException ex) {
-<span class="nc" id="L34">        BindingResult result = ex.getBindingResult();</span>
-<span class="nc" id="L35">        List&lt;FieldError&gt; fieldErrors = result.getFieldErrors();</span>
-<span class="nc" id="L36">        ErrorVM dto = new ErrorVM(ErrorConstants.ERR_VALIDATION);</span>
-<span class="nc bnc" id="L37" title="All 2 branches missed.">        for (FieldError fieldError : fieldErrors) {</span>
-<span class="nc" id="L38">            dto.add(fieldError.getObjectName(), fieldError.getField(), fieldError.getCode());</span>
-<span class="nc" id="L39">        }</span>
-<span class="nc" id="L40">        return dto;</span>
+<span class="fc" id="L34">        BindingResult result = ex.getBindingResult();</span>
+<span class="fc" id="L35">        List&lt;FieldError&gt; fieldErrors = result.getFieldErrors();</span>
+<span class="fc" id="L36">        ErrorVM dto = new ErrorVM(ErrorConstants.ERR_VALIDATION);</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        for (FieldError fieldError : fieldErrors) {</span>
+<span class="fc" id="L38">            dto.add(fieldError.getObjectName(), fieldError.getField(), fieldError.getCode());</span>
+<span class="fc" id="L39">        }</span>
+<span class="fc" id="L40">        return dto;</span>
     }
 
     @ExceptionHandler(CustomParameterizedException.class)
