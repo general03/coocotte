@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: fr.rigaudie.coocotte.cucumber.CucumberTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 100.63 sec - in fr.rigaudie.coocotte.cucumber.CucumberTest

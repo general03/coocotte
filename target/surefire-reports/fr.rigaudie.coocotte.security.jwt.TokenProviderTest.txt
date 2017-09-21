@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: fr.rigaudie.coocotte.security.jwt.TokenProviderTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.753 sec - in fr.rigaudie.coocotte.security.jwt.TokenProviderTest
