@@ -598,7 +598,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <executable>true</executable>
+                    <executable>false</executable>
                     <fork>true</fork>
                     <!--
                     Enable the line below to have remote debugging of your application on port 5005
@@ -756,7 +756,7 @@
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
                         <configuration>
-                            <executable>true</executable>
+                            <executable>false</executable>
                         </configuration>
                         <executions>
                             <execution>
