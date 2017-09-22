@@ -15,7 +15,7 @@
                 <button type="button" class="btn btn-primary" ng-click="clicked = 'false'" ng-show="clicked == 'true'">Retour aux articles</button>
                 <div ng-show="clicked == 'true'" >
                   <h1>{{ art.title }}</h1>
-                  <p>{{ art.content }}</p>
+                  <p ng-bind-html="art.content"></p>
                 </div>
                 <div layout="row" ng-hide="clicked == 'true'" >
                   <div flex ng-click="clicked = 'true'" class="cursor-pointer">
